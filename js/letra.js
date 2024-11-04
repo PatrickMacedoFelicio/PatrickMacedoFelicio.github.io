@@ -1,5 +1,5 @@
 // Array de palavras predefinidas
-const words = ["Neymar123", "TentaMeHakiarVAI", "Lindinho321", "EuSouLinda2004", "BatataFrita4Ever", "Neymar_Eu_Te_Amo", "#AmigaSuaLouca123", "Od3ioJAVA", "FechadoComC#", "AmoWeb<3", "N4oQueroEstudar"];
+const words = ["Neymar123", "TentaMeHakiarVAI", "Lindinho321", "EuSouLinda2004", "Neymar_Eu_Te_Amo", "#AmigaSuaLouca123", "MorraJAVA", "AmoWeb<3", "NaoQueroEstudar😜"];
 
 // Seleciona aleatoriamente uma palavra do array
 const randomWord = words[Math.floor(Math.random() * words.length)];
