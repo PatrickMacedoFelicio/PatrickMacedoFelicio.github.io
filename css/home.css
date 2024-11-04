@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic:wdth,wght@62.5,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+body{ 
+    background-color: #faf2ff; 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    }
+
+    input{
+      margin-top: 0.5vw;
+      font-size: 0.95rem;
+      width: 15rem;
+      padding: 0.2rem 0.4rem;
+      border: solid 0.15rem #a840ed;
+      border-radius: 0.25rem;
+  }
+
+    
+    .meio{
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .quadrado {
+        margin-top: 2rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 0.8rem 2rem;
+        width: 40rem;
+        height: 25rem;
+        border-radius: 0.8rem;
+        background-color: #ffffff;
+    }
+
+    h2{
+        font-weight: 500;
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: 0.2rem;
+        font-weight: 600;
+        color: #9b3adb;
+    }
+  
+
+    hr{
+        border: solid 0.12rem #a840ed;
+    }
+
+    .coluna{
+        display: flex;
+        gap: 5rem;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.3rem;
+    }
+    
+    .asd {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 1.4rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default radio button */
+        .asd input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+      
+        /* Create a custom radio button */
+        .cm {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 25px;
+          width: 25px;
+          background-color: #eee;
+          border-radius: 50%;
+        }
+      
+        /* On mouse-over, add a grey background color */
+        .asd:hover input ~ .cm {
+          background-color: #ccc;
+        }
+      
+        /* When the radio button is checked, add a blue background */
+        .asd input:checked ~ .cm {
+          background-color: #a840ed;
+        }
+      
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .cm:after {
+          content: "";
+          position: absolute;
+          display: none;
+        }
+      
+        /* Show the indicator (dot/circle) when checked */
+        .asd input:checked ~ .cm:after {
+          display: block;
+        }
+      
+        /* Style the indicator (dot/circle) */
+        .asd .cm:after {
+            top: 9px;
+            left: 9px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: white;
+        }
+
+
+    .check-bx {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 1.4rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* Hide the browser's default checkbox */
+      .check-bx input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+      
+      /* Create a custom checkbox */
+      .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+      }
+      
+      /* On mouse-over, add a grey background color */
+      .check-bx:hover input ~ .checkmark {
+        background-color: #ccc;
+      }
+      
+      /* When the checkbox is checked, add a blue background */
+      .check-bx input:checked ~ .checkmark {
+        background-color: #a840ed;
+      }
+      
+      /* Create the checkmark/indicator (hidden when not checked) */
+      .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+      
+      /* Show the checkmark when checked */
+      .check-bx input:checked ~ .checkmark:after {
+        display: block;
+      }
+      
+      /* Style the checkmark/indicator */
+      .check-bx .checkmark:after {
+        left: 9px;
+        top: 5px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      .nav-bar{
+        display: flex;
+        gap: 4rem;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+
+      .pesquisa{
+        display: flex;
+        gap: 2rem;
+      }
+
+      a{
+        color: #9b3adb;
+        text-decoration: none;
+        font-weight:600;
+        font-size: 1.3rem;
+      }
+
+      .roxo{
+        background-image: linear-gradient(to bottom right, #a840ed, #5f38a3);
+        justify-content: center;
+        align-items: center;
+        color: white;
+        margin-bottom: 2rem;
+        padding: 2rem 4rem;
+      }
+
+      img{
+        width: 30rem;
+      }
+
+      .bt-dif{
+        border: #ffffff solid;
+        font-size: 1.3rem;
+        border-radius: 0.3rem;
+        font-weight: 600;
+        background-color: white;
+        color: #9b3adb;
+        margin-top: 1rem;
+      }
+
+      
+      .bt{
+        background-color: #a840ed;
+        color: white;
+        border: solid #a840ed;
+        border-radius: 0.3rem;
+        font-size: 1.2rem;
+        padding: 0.5rem 0.4rem;
+      }
+
+      .bt:hover{
+        cursor: pointer;
+        background-color: #9b3cda;
+        border: solid #9b3cda;
+      }
+
+      h1{
+          font-weight: 600;
+          font-size: 2.5rem;
+          margin: 0;
+      }
+
+      button:hover{
+          cursor: pointer;
+          background-color: #ebebeb;
+          border: solid #ebebeb;
+      }
+
+      footer{
+        padding: 3rem 5rem 3rem 5rem;
+        margin-top: 10rem;
+        background-image: linear-gradient(to bottom right, #5f38a3, #a840ed)
+      }
+
+      .branco{
+        color: white;
+    }
+
+    h3{
+      color: white;
+      text-align: center;
+    }
